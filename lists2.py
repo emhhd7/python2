@@ -4,8 +4,9 @@
 list_of_numbers = [-40, 1, 2, 70, 33, 400]
 print(list_of_numbers)
 
-
 positive_numbers = []
+
+multiple = 4
 total = 0
 
 # print('The total is %d' % sum(list_of_numbers))
@@ -48,3 +49,7 @@ for num in list_of_numbers:
     if num >= 0:
         positive_numbers.append(num)
 print(positive_numbers)
+
+# 7 Multiply a List
+multiplied_numbers = [num * 2 for num in list_of_numbers]
+print(multiplied_numbers)
