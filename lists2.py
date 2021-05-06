@@ -3,6 +3,8 @@
 
 list_of_numbers = [-40, 1, 2, 70, 33, 400]
 print(list_of_numbers)
+
+
 positive_numbers = []
 total = 0
 
@@ -32,13 +34,17 @@ for num in list_of_numbers:
 print('The smallest number is: ' + str(smallest))
 
 # 4 Even Numbers
-even_number = list_of_numbers[0]
 for num in list_of_numbers:
     if num % 2 == 0:
         print('Even Number: %d' % num)
 
-# 5 Greater than 0
-greater_than_zero = list_of_numbers[0]
+# 5 Positive Numbers I
 for num in list_of_numbers:
     if num >= 0:
         print('Positive Number: %d' % num)
+
+# 6 Positive Number II
+for num in list_of_numbers:
+    if num >= 0:
+        positive_numbers.append(num)
+print(positive_numbers)
