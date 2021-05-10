@@ -13,24 +13,27 @@ while True:
         search = input('What is the contact\'s name? ')
         print(phonebook[search])
 
-    if choice == 2:
+    elif choice == 2:
         newName = input('Name: ')
         newNumber = input('Phone Number: ')
         phonebook[newName] = newNumber
         print('\n')
         print(phonebook)
 
-    if choice == 3:
+    elif choice == 3:
         deleteName = input('Who would you like to remove? ')
         del phonebook[deleteName]
         print(phonebook)
 
-    if choice == 4:
+    elif choice == 4:
         entries = phonebook.items()
         print('\n')
         for entry in entries:
             print('Found entry for: ' + entry[0]+" : "+entry[1])
 
-    if choice == 5:
+    elif choice == 5:
         print('Bye.')
         break
+
+    else:
+        print('\nPlease input a valid option.')
